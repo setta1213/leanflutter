@@ -1,0 +1,37 @@
+======================================================
+ LeanFlutter Project Structure
+======================================================
+
+📁 lib/
+ ├─ main.dart
+ └─ src/
+     ├─ app.dart
+     ├─ pages/
+     │    ├─ home/
+     │    │    └─ home_page.dart
+     │    ├─ login/
+     │    │     ├─ login_page.dart             ← ไฟล์หลัก (build UI)
+     │    │     ├─ login_controller.dart       ← Logic Login & Animation Controllers
+     │    │     ├─ login_widgets.dart          ← ปุ่ม TextField Logo Widgets
+     │    │     ├─ login_background.dart       ← พวก background + ParticlePainter
+     │    │     ├─ login_success_overlay.dart  ← Animation Success
+     │    │     └─ login_state.dart     
+     │    └─ splash/
+     │         └─ splash_page.dart
+     ├─ widgets/
+     ├─ themes/
+     │    └─ app_theme.dart
+     ├─ services/
+     └─ models/
+📁 assets/
+ └─ images/
+      └─ btu.png
+
+------------------------------------------------------
+Timestamp : 2025-12-04 00:55
+Version   : 1.2
+Updates   :
++ Added 3D Splash Animation
++ Added assets/images/btu.png
++ Updated splash_page.dart (3D rotate + scale + fade text)
+------------------------------------------------------
