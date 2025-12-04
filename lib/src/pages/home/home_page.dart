@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:leanflutter/src/pages/home/attendance.dart';
 import 'package:leanflutter/src/pages/home/home_bottom_nav.dart';
 import 'package:leanflutter/src/pages/home/profile_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -16,7 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Map<String, dynamic>? userData;
   int _currentIndex = 0;
-
+  
   @override
   void initState() {
     super.initState();
@@ -33,16 +34,20 @@ class _HomePageState extends State<HomePage> {
       });
     }
   }
-
+  
   List<Widget> get _pages => [
+    AttendanceScreen(),
     Center(child: Text("หน้าแรก", style: TextStyle(fontSize: 28))),
     Center(child: Text("งานของฉัน", style: TextStyle(fontSize: 28))),
     Center(child: Text("การแจ้งเตือน", style: TextStyle(fontSize: 28))),
     ProfilePage(userData: userData),
+    
   ];
+
 
   @override
   Widget build(BuildContext context) {
+    final firstname = userData?["firstname"]?? ""; 
     return Scaffold(
       drawer: HomeDrawer(
         userData: userData,
@@ -54,7 +59,8 @@ class _HomePageState extends State<HomePage> {
       ),
 
       appBar: AppBar(
-        title: const Text("LeanFlutter"),
+        title:  Text(firstname),
+        centerTitle: true,
         backgroundColor: Colors.black,
       ),
 

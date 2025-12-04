@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:leanflutter/src/pages/login/login_page.dart';
+import 'package:leanflutter/src/pages/auth/auth_check_page.dart';
+// import 'package:leanflutter/src/pages/login/login_page.dart';
 
 
 class SplashPage extends StatefulWidget {
@@ -52,7 +53,7 @@ class _SplashPageState extends State<SplashPage>
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const LoginPage()),
+        MaterialPageRoute(builder: (_) => const AuthCheckPage()),
       );
     });
   }

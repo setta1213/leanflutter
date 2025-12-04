@@ -15,10 +15,11 @@ class HomeBottomNav extends StatelessWidget {
     return Container(
       height: 80,
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: const Color.fromARGB(255, 0, 0, 0),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.5),
+            // ignore: deprecated_member_use
+            color: const Color.fromARGB(255, 20, 223, 20).withOpacity(0.5),
             blurRadius: 20,
             spreadRadius: 5,
             offset: const Offset(0, 5),
@@ -46,6 +47,7 @@ class HomeBottomNav extends StatelessWidget {
                 borderRadius: BorderRadius.circular(2),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: const Color(0xFFFFD700).withOpacity(0.5),
                     blurRadius: 10,
                     spreadRadius: 2,
@@ -106,7 +108,7 @@ class HomeBottomNav extends StatelessWidget {
         onTap: () => onTap(index),
         child: Container(
           height: 80,
-          color: Colors.transparent,
+          color: const Color.fromARGB(0, 138, 124, 124),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
