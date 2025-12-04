@@ -13,7 +13,7 @@ class HomeBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
+      height: 100,
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 0, 0, 0),
         boxShadow: [
@@ -39,10 +39,7 @@ class HomeBottomNav extends StatelessWidget {
               height: 3,
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
-                  colors: [
-                    Color(0xFFFFD700),
-                    Color(0xFFFFB300),
-                  ],
+                  colors: [Color(0xFFFFD700), Color(0xFFFFB300)],
                 ),
                 borderRadius: BorderRadius.circular(2),
                 boxShadow: [
@@ -60,15 +57,15 @@ class HomeBottomNav extends StatelessWidget {
           Row(
             children: [
               _buildNavItem(
-                icon: Icons.home_outlined,
-                activeIcon: Icons.home_filled,
-                label: "Home",
+                icon: Icons.calendar_month,
+                activeIcon: Icons.calendar_month,
+                label: "ตารางเข้างาน",
                 index: 0,
                 badge: null,
               ),
               _buildNavItem(
-                icon: Icons.work_outline,
-                activeIcon: Icons.work,
+                icon: Icons.report_gmailerrorred,
+                activeIcon: Icons.report_gmailerrorred,
                 label: "งาน",
                 index: 1,
                 badge: null,
@@ -136,7 +133,9 @@ class HomeBottomNav extends StatelessWidget {
                       child: Icon(
                         isActive ? activeIcon : icon,
                         key: ValueKey(isActive),
-                        color: isActive ? const Color(0xFFFFD700) : Colors.white54,
+                        color: isActive
+                            ? const Color(0xFFFFD700)
+                            : Colors.white54,
                         size: 24,
                       ),
                     ),
@@ -151,10 +150,7 @@ class HomeBottomNav extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.red,
                           shape: BoxShape.circle,
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 2,
-                          ),
+                          border: Border.all(color: Colors.black, width: 2),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black.withOpacity(0.3),

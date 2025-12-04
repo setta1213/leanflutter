@@ -37,8 +37,8 @@ class _HomePageState extends State<HomePage> {
   
   List<Widget> get _pages => [
     AttendanceScreen(),
-    Center(child: Text("หน้าแรก", style: TextStyle(fontSize: 28))),
-    Center(child: Text("งานของฉัน", style: TextStyle(fontSize: 28))),
+    // Center(child: Text("หน้าแรก", style: TextStyle(fontSize: 28))),
+    Center(child: Text("report", style: TextStyle(fontSize: 28))),
     Center(child: Text("การแจ้งเตือน", style: TextStyle(fontSize: 28))),
     ProfilePage(userData: userData),
     
