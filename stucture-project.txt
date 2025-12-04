@@ -35,3 +35,45 @@ Updates   :
 + Added assets/images/btu.png
 + Updated splash_page.dart (3D rotate + scale + fade text)
 ------------------------------------------------------
+
+
+======================================================
+ LeanFlutter Project Structure — Version 1.9
+======================================================
+
+📁 lib/
+ ├─ main.dart
+ └─ src/
+     ├─ app.dart
+     ├─ themes/
+     │     └─ app_theme.dart
+     ├─ services/
+     │     ├─ api_list.dart
+     │     └─ auth_service.dart
+     ├─ pages/
+     │     ├─ auth/
+     │     │     └─ auth_check_page.dart
+     │     ├─ splash/
+     │     │     └─ splash_page.dart
+     │     ├─ login/
+     │     │     ├─ login_page.dart
+     │     │     ├─ login_controller.dart
+     │     │     ├─ login_widgets.dart
+     │     │     ├─ login_background.dart
+     │     │     ├─ login_success_overlay.dart
+     │     │     └─ login_state.dart
+     │     └─ home/
+     │           └─ home_page.dart
+     ├─ models/
+     └─ widgets/
+
+📁 assets/
+ ├─ images/
+ │     └─ btu.png
+ └─ fonts/
+       ├─ Nabla.ttf
+       └─ (others...)
+
+------------------------------------------------------
+Timestamp : 2025-12-04 03:16
+------------------------------------------------------
