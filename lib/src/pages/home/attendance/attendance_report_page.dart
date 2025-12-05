@@ -194,7 +194,7 @@ class _AttendancePrintPageState extends State<AttendancePrintPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // ส่วนหัว
-                  _buildHeaderSection(),
+                  // _buildHeaderSection(),
                   
                   const SizedBox(height: 32),
                   
