@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:leanflutter/src/pages/home/attendance.dart';
+import 'package:leanflutter/src/pages/home/attendance/attendance.dart';
+import 'package:leanflutter/src/pages/home/attendance/attendance_report_page.dart';
 import 'package:leanflutter/src/pages/home/home_bottom_nav.dart';
 import 'package:leanflutter/src/pages/home/profile_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -37,6 +38,7 @@ class _HomePageState extends State<HomePage> {
   
   List<Widget> get _pages => [
     AttendanceScreen(),
+    AttendancePrintPage(),
     // Center(child: Text("หน้าแรก", style: TextStyle(fontSize: 28))),
     Center(child: Text("report", style: TextStyle(fontSize: 28))),
     Center(child: Text("การแจ้งเตือน", style: TextStyle(fontSize: 28))),

@@ -64,9 +64,9 @@ class HomeBottomNav extends StatelessWidget {
                 badge: null,
               ),
               _buildNavItem(
-                icon: Icons.report_gmailerrorred,
-                activeIcon: Icons.report_gmailerrorred,
-                label: "งาน",
+                icon: Icons.format_list_numbered_rounded,
+                activeIcon: Icons.format_list_numbered_rounded,
+                label: "รายงาน",
                 index: 1,
                 badge: null,
               ),

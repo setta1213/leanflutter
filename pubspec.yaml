@@ -41,6 +41,8 @@ dependencies:
   icons_launcher: ^3.0.3
   rename_app: ^1.6.5
   intl: ^0.20.2
+  pdf: ^3.11.3
+  printing: ^5.14.2
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +77,12 @@ flutter:
     - family: Lobster
       fonts: 
         - asset: assets/fonts/Lobster.ttf
+    - family: THSarabun
+      fonts: 
+        - asset: assets/fonts/THSarabun.ttf
+    - family: Dejavusans
+      fonts: 
+        - asset: assets/fonts/Dejavusans.ttf
 icons_launcher:
   image_path: "assets/images/icon.png" # ใส่ path ตรงนี้ได้เลย
   platforms:
